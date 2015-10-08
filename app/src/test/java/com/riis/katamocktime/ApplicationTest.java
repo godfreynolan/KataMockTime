@@ -1,4 +1,4 @@
-package com.riis.hellopreferences;
+package com.riis.katamocktime;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

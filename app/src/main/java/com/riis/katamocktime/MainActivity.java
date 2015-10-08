@@ -1,23 +1,22 @@
-package com.riis.hellopreferences;
+package com.riis.katamocktime;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
 
-    private static String USERLOGIN = "godfreynolan";
+public class MainActivity extends Activity {
+    private MyClass myClass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        UserPreferences uPref = new UserPreferences();
-        uPref.saveSharedPreferences(this, USERLOGIN);
-
         TextView myTextView = (TextView) findViewById(R.id.txt_field);
-        myTextView.setText(uPref.getSharedPreferences(this));
+        // String s = myClass.getDoubleTime().toString();
+        // myTextView.setText(s);
+        myTextView.setText("bollox");
     }
 
 
